@@ -1,0 +1,7 @@
+This is a simple CodeIgniter app that allows you to pick a youtube video and get a GIF out of it.
+
+You can select at what time you want the gif to start and how many seconds of the video you want.
+
+The code for the youtube grabber class is taken from http://1chris.com/post/39/using-php-to-download-youtube-flvs/
+
+
