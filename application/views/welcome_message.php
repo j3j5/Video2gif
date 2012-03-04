@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>Welcome to Video2gif</title>
 
 	<style type="text/css">
 
@@ -47,7 +47,7 @@
 	#body{
 		margin: 0 15px 0 15px;
 	}
-	
+
 	p.footer{
 		text-align: right;
 		font-size: 11px;
@@ -56,7 +56,7 @@
 		padding: 0 10px 0 10px;
 		margin: 20px 0 0 0;
 	}
-	
+
 	#container{
 		margin: 10px;
 		border: 1px solid #D0D0D0;
@@ -67,18 +67,34 @@
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<h1>Welcome to Video2gif!</h1>
 
 	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+	Fields mark with an * are mandatory.
+	<form	id="video_info"
+			method="post"
+			enctype="application/x-www-form-urlencoded"
+			action="http://video2gif.test/video_converter/convert/">
+	<p><label>Youtube URL*: <input name="url"></label></p>
+	<p><label>Start: <input type=time name="start"></label></p>
+	<p><label>Duration: <input name="duration"></label></p>
+<!-- 	<p><label>Duration: <input name="quality"></label></p> -->
+	Select the quality*:
+	<select name='quality' form="video_info">
+		<option value="sqcif">sqcif</option>
+		<option value="qcif">qcif</option>
+		<option value="cif">cif</option>
+		<option value="4cif">4cif</option>
+		<option value="16cif">16cif</option>
+		<option value="qqvga">qqvga</option>
+		<option value="qvga">qvga</option>
+		<option value="vga">vga</option>
+		<option value="svga">svga</option>
+		<option value="sameq">Same quality</option>
+	</select>
+	<p><button>Submit video</button></p>
+	</form>
+		<p>If you want to get a gif out of a video just fill the url on the text box and press the button.</p>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
