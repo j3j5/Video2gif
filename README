@@ -4,4 +4,4 @@ You can select at what time you want the gif to start and how many seconds of th
 
 The code for the youtube grabber class is taken from http://1chris.com/post/39/using-php-to-download-youtube-flvs/
 
-
+You need to have installed ffmpeg and imagemagick packages.
