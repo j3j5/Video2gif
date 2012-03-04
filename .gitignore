@@ -1,2 +1,4 @@
 .directory
 .kdev4
+*~
+application/logs/*
